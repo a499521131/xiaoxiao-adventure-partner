@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>小小冒险伙伴 - 对外沟通稿图文版</title>
+  <style>
+    :root {
+      --ink: #202124;
+      --muted: #5f6368;
+      --line: #ded7c8;
+      --paper: #fffaf0;
+      --panel: #ffffff;
+      --blue: #4b7bec;
+      --green: #2f9e7e;
+      --yellow: #f4c542;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+      background: linear-gradient(180deg, #fffaf0, #f4f7ff 70%, #eef7f1);
+      line-height: 1.75;
+    }
+    .page {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 36px 18px 72px;
+    }
+    header {
+      padding: 30px;
+      background: rgba(255,255,255,.88);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      margin-bottom: 24px;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(32px, 5vw, 54px);
+      line-height: 1.08;
+    }
+    .lead {
+      margin: 0;
+      color: var(--muted);
+      font-size: 18px;
+    }
+    section {
+      margin: 22px 0;
+      padding: 26px;
+      background: rgba(255,255,255,.9);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+    }
+    h2 {
+      margin: 0 0 14px;
+      font-size: 28px;
+      line-height: 1.25;
+    }
+    h3 {
+      margin: 20px 0 8px;
+      font-size: 20px;
+    }
+    p { margin: 8px 0; }
+    ul, ol { padding-left: 24px; }
+    li { margin: 5px 0; }
+    .hero-img, figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: white;
+      margin: 18px 0;
+    }
+    figure { margin: 0; }
+    figcaption {
+      color: var(--muted);
+      font-size: 14px;
+      margin: -8px 0 18px;
+      text-align: center;
+    }
+    .quote {
+      padding: 16px 18px;
+      background: #eef6f2;
+      border-left: 5px solid var(--green);
+      border-radius: 8px;
+      font-size: 18px;
+      margin: 18px 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 16px;
+      background: #fffdf8;
+    }
+    .tag {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: #eaf1ff;
+      color: #284fbd;
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+    .flow {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .step {
+      padding: 14px 10px;
+      min-height: 88px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #fff6d8;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+    }
+    .cta {
+      background: #202124;
+      color: white;
+      border-color: #202124;
+    }
+    .cta p, .cta li { color: rgba(255,255,255,.86); }
+    .cta h2 { color: white; }
+    .nav-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .nav-link {
+      display: inline-block;
+      padding: 12px 16px;
+      border-radius: 10px;
+      background: #202124;
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .nav-link.secondary {
+      background: white;
+      color: #202124;
+      border: 1px solid var(--line);
+    }
+    @media (max-width: 760px) {
+      .grid, .flow { grid-template-columns: 1fr; }
+      section, header { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>小小冒险伙伴</h1>
+      <p class="lead">一个儿童 AI 伙伴 Demo：孩子画出自己的伙伴，通过知识挑战和互动，让伙伴产生故事变化。</p>
+      <div class="nav-actions">
+        <a class="nav-link" href="tasks.html">查看任务协作窗口</a>
+        <a class="nav-link secondary" href="#join">我能帮什么</a>
+      </div>
+    </header>
+
+    <figure>
+      <img class="hero-img" src="assets/01-child-draws-companion.svg" alt="孩子画出自己的伙伴">
+      <figcaption>伙伴不是系统发的，而是孩子先画出来的。</figcaption>
+    </figure>
+
+    <section>
+      <h2>一、现在教育的痛点是什么？</h2>
+      <p>AI 正在让知识获取变得越来越便宜。过去教育很大一部分价值来自“老师讲知识、学生记知识、考试验证知识”。但未来，孩子想知道一个概念、公式、历史事件或科学现象，AI 都可以很快解释。</p>
+      <p>真正的问题会变成：孩子有没有好奇心？会不会主动提问？能不能把知识用到真实生活里？能不能持续行动、创造作品、和别人合作？</p>
+      <div class="quote">知识会变便宜，但成长不会。</div>
+      <div class="grid">
+        <div class="card"><span class="tag">旧问题</span><p>重知识输入，轻真实体验。</p></div>
+        <div class="card"><span class="tag">旧问题</span><p>重标准答案，轻主动提问。</p></div>
+        <div class="card"><span class="tag">旧问题</span><p>重分数排名，轻人格成长。</p></div>
+        <div class="card"><span class="tag">旧问题</span><p>重外部评价，轻自我理解。</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>二、未来教育可能是什么样？</h2>
+      <p>未来教育不应该只是网课、题库、学习机、标准课程表，或用 AI 包装的应试系统。</p>
+      <p>它更像一个孩子长期拥有的成长伙伴系统。它会陪孩子发现问题、学一点需要的知识、做一个小挑战、记录自己的发现，慢慢看见自己在变化。</p>
+      <p>更重要的能力包括：好奇心、经验、生命力、专注力、想象力和合作能力。</p>
+    </section>
+
+    <section>
+      <h2>三、这个产品是什么？</h2>
+      <p>它不是网课，不是题库，也不是普通 AI 聊天。它是一个儿童 AI 伙伴产品的早期原型。</p>
+      <ol>
+        <li>孩子画一个伙伴。</li>
+        <li>系统生成统一风格的 2D 卡通形象。</li>
+        <li>孩子和伙伴互动。</li>
+        <li>系统给出一个知识小挑战。</li>
+        <li>孩子完成后，伙伴获得变化。</li>
+        <li>系统把经历记录成一页回忆故事。</li>
+      </ol>
+      <figure>
+        <img src="assets/02-sketch-to-companion.svg" alt="草稿变成统一风格伙伴">
+        <figcaption>系统把孩子的想象整理成稳定、可延展的视觉角色。</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>四、核心体验</h2>
+      <h3>知识小挑战</h3>
+      <p>知识不是题库，而是伙伴获得技能、故事变化和小挑战的入口。</p>
+      <figure>
+        <img src="assets/03-knowledge-challenge.svg" alt="知识小挑战">
+        <figcaption>一个知识点，变成一个孩子能完成的小行动。</figcaption>
+      </figure>
+      <h3>伙伴变化</h3>
+      <p>孩子看到的不是分数，而是伙伴多了一个表情、道具、技能或故事片段。</p>
+      <figure>
+        <img src="assets/04-companion-evolves.svg" alt="伙伴发生变化">
+        <figcaption>完成挑战后，伙伴发生变化，而不是显示分数。</figcaption>
+      </figure>
+      <h3>回忆故事本</h3>
+      <p>成长不是一串数字，而是一页页孩子和伙伴共同经历过的故事。</p>
+      <figure>
+        <img src="assets/05-memory-storybook.svg" alt="回忆故事本">
+        <figcaption>长期陪伴需要记忆，也需要故事。</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>五、第一版只做什么？</h2>
+      <p>第一版只做 5 个页面：</p>
+      <div class="flow">
+        <div class="step">创建伙伴</div>
+        <div class="step">伙伴主页</div>
+        <div class="step">知识小挑战</div>
+        <div class="step">互动聊天</div>
+        <div class="step">回忆故事本</div>
+      </div>
+      <p>第一版只做 6 个系统：形象设计、知识系统、成长系统、游戏系统、记忆系统、硬件桥接系统。</p>
+    </section>
+
+    <section>
+      <h2>六、第一版明确不做什么？</h2>
+      <ul>
+        <li>不做原生 App。</li>
+        <li>不做真实 3D 自动生成。</li>
+        <li>不做复杂骨骼绑定。</li>
+        <li>不做完整语音包。</li>
+        <li>不做实体硬件。</li>
+        <li>不做账号、支付和家长后台。</li>
+        <li>不做真实儿童数据采集。</li>
+        <li>不承诺替代学校。</li>
+      </ul>
+    </section>
+
+    <section class="cta" id="join">
+      <h2>七、我现在需要哪些协作者？</h2>
+      <ul>
+        <li>产品/UX：画清 5 个页面流程。</li>
+        <li>插画/视觉：定义伙伴统一美术风格。</li>
+        <li>AI 绘图提示词：把孩子草稿变成统一风格伙伴。</li>
+        <li>前端：做一个能本地运行的 Web Demo。</li>
+        <li>教育内容：设计第一批知识小挑战。</li>
+        <li>游戏策划：设计伙伴技能和故事反馈。</li>
+        <li>Prompt/模型桥接：连接豆包、DeepSeek 等外部 AI。</li>
+        <li>法律/IP：保护项目概念、命名、文档、角色设定、美术风格、提示词、代码和协作成果。</li>
+      </ul>
+      <p>这是一个早期原型。我现在需要的不是宏大的口号，而是能把最小闭环一起做出来的人。</p>
+    </section>
+  </main>
+</body>
+</html>

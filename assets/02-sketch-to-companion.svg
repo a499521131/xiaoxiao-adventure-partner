@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">草稿变成统一风格的伙伴</title>
+  <desc id="desc">左边是孩子的草稿，右边是统一风格的数字伙伴，中间用箭头连接。</desc>
+  <rect width="1200" height="720" fill="#EEF6F2"/>
+  <rect x="95" y="100" width="370" height="470" rx="28" fill="#FFFFFF" stroke="#222222" stroke-width="5"/>
+  <text x="280" y="160" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="30" fill="#222222">孩子的草稿</text>
+  <path d="M250 310c-40-65 12-135 72-103 62-33 112 38 72 103-25 44-119 44-144 0z" fill="none" stroke="#222222" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="295" cy="285" r="8" fill="#222222"/>
+  <circle cx="352" cy="285" r="8" fill="#222222"/>
+  <path d="M297 335c25 16 48 16 72 0" fill="none" stroke="#222222" stroke-width="6" stroke-linecap="round"/>
+  <path d="M246 205l-40-48M402 205l42-48" stroke="#222222" stroke-width="7" stroke-linecap="round"/>
+  <rect x="735" y="100" width="370" height="470" rx="28" fill="#FFFFFF" stroke="#222222" stroke-width="5"/>
+  <text x="920" y="160" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="30" fill="#222222">统一风格伙伴</text>
+  <path d="M842 319c-45-76 18-157 88-119 72-38 134 44 88 119-33 55-143 55-176 0z" fill="#F4D35E" stroke="#222222" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M858 232l-50-60M1001 232l55-60" stroke="#222222" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="897" cy="292" r="10" fill="#222222"/>
+  <circle cx="959" cy="292" r="10" fill="#222222"/>
+  <circle cx="879" cy="318" r="14" fill="#F28B82" opacity="0.8"/>
+  <circle cx="976" cy="318" r="14" fill="#F28B82" opacity="0.8"/>
+  <path d="M900 350c20 16 43 16 64 0" fill="none" stroke="#222222" stroke-width="6" stroke-linecap="round"/>
+  <rect x="850" y="410" width="145" height="56" rx="28" fill="#79C6C0" stroke="#222222" stroke-width="5"/>
+  <path d="M505 340h165" stroke="#222222" stroke-width="10" stroke-linecap="round"/>
+  <path d="M650 300l45 40-45 40" fill="none" stroke="#222222" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="600" y="640" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="34" fill="#222222">系统把想象整理成稳定、可延展的视觉角色</text>
+</svg>

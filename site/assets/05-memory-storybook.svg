@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">回忆故事本</title>
+  <desc id="desc">数字故事本记录孩子和伙伴一起完成的知识挑战和发现。</desc>
+  <rect width="1200" height="720" fill="#EEF6F2"/>
+  <rect x="150" y="95" width="900" height="520" rx="34" fill="#FFFFFF" stroke="#222222" stroke-width="5"/>
+  <path d="M600 110v490" stroke="#222222" stroke-width="5"/>
+  <rect x="205" y="155" width="320" height="90" rx="18" fill="#FFF7DA" stroke="#222222" stroke-width="4"/>
+  <text x="365" y="212" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="28" fill="#222222">今天的发现</text>
+  <path d="M230 300h280M230 340h240M230 380h260" stroke="#222222" stroke-width="7" stroke-linecap="round"/>
+  <rect x="230" y="430" width="250" height="95" rx="20" fill="#D8E8FF" stroke="#222222" stroke-width="4"/>
+  <circle cx="295" cy="478" r="24" fill="#F4D35E" stroke="#222222" stroke-width="4"/>
+  <path d="M350 455h95M350 490h70" stroke="#222222" stroke-width="6" stroke-linecap="round"/>
+  <rect x="675" y="155" width="300" height="90" rx="18" fill="#EAF6EA" stroke="#222222" stroke-width="4"/>
+  <text x="825" y="212" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="28" fill="#222222">伙伴的故事</text>
+  <path d="M760 330c-35-57 12-120 67-88 56-32 104 31 68 88-25 43-110 43-135 0z" fill="#F4D35E" stroke="#222222" stroke-width="5"/>
+  <circle cx="807" cy="312" r="7" fill="#222222"/>
+  <circle cx="850" cy="312" r="7" fill="#222222"/>
+  <path d="M807 355c16 12 32 12 48 0" fill="none" stroke="#222222" stroke-width="5" stroke-linecap="round"/>
+  <path d="M705 440h250M705 480h220M705 520h180" stroke="#222222" stroke-width="7" stroke-linecap="round"/>
+  <text x="600" y="665" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="32" fill="#222222">成长不是分数，而是一页页孩子和伙伴的回忆</text>
+</svg>

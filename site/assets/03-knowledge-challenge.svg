@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">知识小挑战</title>
+  <desc id="desc">伙伴拿着小书，屏幕中显示知识解释和一个小挑战。</desc>
+  <rect width="1200" height="720" fill="#F4F7FF"/>
+  <rect x="90" y="80" width="1020" height="560" rx="34" fill="#FFFFFF" stroke="#222222" stroke-width="5"/>
+  <rect x="150" y="145" width="600" height="420" rx="24" fill="#FFF7DA" stroke="#222222" stroke-width="5"/>
+  <text x="450" y="205" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="34" fill="#222222">今天的小挑战</text>
+  <rect x="200" y="245" width="500" height="72" rx="18" fill="#D8E8FF" stroke="#222222" stroke-width="4"/>
+  <text x="450" y="292" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="26" fill="#222222">声音会通过空气传播</text>
+  <rect x="200" y="350" width="500" height="130" rx="18" fill="#EAF6EA" stroke="#222222" stroke-width="4"/>
+  <text x="450" y="400" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="26" fill="#222222">找 3 个会发出不同声音的东西</text>
+  <text x="450" y="440" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="24" fill="#222222">给它们取名字，并描述声音</text>
+  <path d="M890 333c-44-73 17-150 86-114 70-36 131 41 86 114-32 53-140 53-172 0z" fill="#F4D35E" stroke="#222222" stroke-width="6"/>
+  <circle cx="944" cy="309" r="9" fill="#222222"/>
+  <circle cx="1002" cy="309" r="9" fill="#222222"/>
+  <path d="M948 356c18 13 37 13 56 0" fill="none" stroke="#222222" stroke-width="5" stroke-linecap="round"/>
+  <rect x="840" y="425" width="210" height="105" rx="18" fill="#79C6C0" stroke="#222222" stroke-width="5"/>
+  <path d="M865 452h160M865 482h130" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M812 254l-48-58M1058 254l52-58" stroke="#222222" stroke-width="7" stroke-linecap="round"/>
+  <text x="600" y="615" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="32" fill="#222222">知识不是题库，而是触发一次可完成的小行动</text>
+</svg>
