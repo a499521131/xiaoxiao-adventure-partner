@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>小小冒险伙伴 - 最终愿景</title>
+  <style>
+    :root {
+      --ink: #202124;
+      --muted: #62656b;
+      --line: #d8d2c3;
+      --paper: #fffaf0;
+      --panel: #ffffff;
+      --blue: #4b7bec;
+      --green: #2f9e7e;
+      --yellow: #f4c542;
+      --coral: #df5b4f;
+      --violet: #7257b8;
+      --soft-blue: #eaf1ff;
+      --soft-green: #eaf7f1;
+      --soft-yellow: #fff6d8;
+      --soft-coral: #fff0ee;
+      --shadow: 0 18px 44px rgba(32, 33, 36, 0.09);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+      background:
+        linear-gradient(120deg, rgba(75,123,236,0.12), transparent 32%),
+        linear-gradient(210deg, rgba(47,158,126,0.12), transparent 34%),
+        linear-gradient(180deg, #fffaf0 0%, #f6f8ff 56%, #edf7f2 100%);
+      line-height: 1.75;
+    }
+
+    .page {
+      width: min(1120px, calc(100% - 36px));
+      margin: 0 auto;
+      padding: 30px 0 64px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.04fr) minmax(330px, .96fr);
+      gap: 26px;
+      align-items: center;
+      min-height: 78vh;
+      padding: 28px 0 18px;
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--green);
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      max-width: 760px;
+      font-size: clamp(34px, 5.4vw, 66px);
+      line-height: 1.08;
+    }
+
+    .lead {
+      margin: 0;
+      max-width: 680px;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    .nav-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+
+    .nav-link {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 10px 16px;
+      border-radius: 8px;
+      border: 1px solid var(--ink);
+      background: var(--ink);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .nav-link.secondary {
+      background: #fff;
+      color: var(--ink);
+      border-color: var(--line);
+    }
+
+    .hero-visual {
+      background: rgba(255,255,255,0.82);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .hero-visual img {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: white;
+    }
+
+    .caption {
+      margin: 0;
+      padding: 12px 14px 14px;
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    section {
+      margin: 22px 0;
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255,255,255,0.9);
+      box-shadow: 0 10px 30px rgba(32, 33, 36, 0.05);
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: clamp(24px, 3vw, 34px);
+      line-height: 1.25;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+      line-height: 1.35;
+    }
+
+    p {
+      margin: 8px 0;
+      color: var(--muted);
+    }
+
+    .statement {
+      margin: 16px 0 0;
+      padding: 16px 18px;
+      border-left: 5px solid var(--green);
+      border-radius: 8px;
+      background: var(--soft-green);
+      color: var(--ink);
+      font-size: 18px;
+      line-height: 1.65;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .two-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .card {
+      min-height: 148px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fffdf8;
+    }
+
+    .card.blue { background: var(--soft-blue); }
+    .card.green { background: var(--soft-green); }
+    .card.yellow { background: var(--soft-yellow); }
+    .card.coral { background: var(--soft-coral); }
+
+    .tag {
+      display: inline-block;
+      margin-bottom: 9px;
+      padding: 4px 9px;
+      border-radius: 8px;
+      background: #fff;
+      color: var(--blue);
+      border: 1px solid rgba(75,123,236,0.25);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .compare {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .compare-block {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    .compare-block.old {
+      border-top: 6px solid var(--coral);
+    }
+
+    .compare-block.new {
+      border-top: 6px solid var(--green);
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 22px;
+      color: var(--muted);
+    }
+
+    li { margin: 6px 0; }
+
+    .journey {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .step {
+      min-height: 108px;
+      padding: 14px 10px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+
+    .step:nth-child(1) { background: var(--soft-blue); }
+    .step:nth-child(2) { background: var(--soft-yellow); }
+    .step:nth-child(3) { background: var(--soft-green); }
+    .step:nth-child(4) { background: var(--soft-coral); }
+    .step:nth-child(5) { background: #f2efff; }
+
+    figure {
+      margin: 18px 0 0;
+      padding: 0;
+    }
+
+    figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: white;
+    }
+
+    figcaption {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .guardrails {
+      background: #202124;
+      color: #fff;
+      border-color: #202124;
+    }
+
+    .guardrails h2,
+    .guardrails h3 {
+      color: #fff;
+    }
+
+    .guardrails p,
+    .guardrails li {
+      color: rgba(255,255,255,0.82);
+    }
+
+    .guardrails .card {
+      background: rgba(255,255,255,0.08);
+      border-color: rgba(255,255,255,0.18);
+    }
+
+    .guardrails .tag {
+      color: #fff;
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(255,255,255,0.22);
+    }
+
+    footer {
+      padding: 24px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    @media (max-width: 860px) {
+      .hero,
+      .grid,
+      .two-grid,
+      .compare,
+      .journey {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: auto;
+        padding-top: 18px;
+      }
+
+      section {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">最终愿景</p>
+        <h1>让每个孩子拥有一个由自己创造、陪自己成长的 AI 伙伴</h1>
+        <p class="lead">未来知识会越来越容易获得，真正稀缺的会变成好奇心、真实经验、生命力、专注力、想象力和合作能力。这个项目想做的不是新的网课、题库或分数系统，而是把孩子的想象、学习、行动和回忆连接成一段长期成长故事。</p>
+        <div class="nav-actions">
+          <a class="nav-link" href="index.html">查看项目介绍</a>
+          <a class="nav-link secondary" href="tasks.html">查看任务协作窗口</a>
+        </div>
+      </div>
+      <figure class="hero-visual">
+        <img src="assets/01-child-draws-companion.svg" alt="孩子在纸上画出自己的 AI 成长伙伴">
+        <figcaption class="caption">伙伴不是系统发给孩子的角色，而是从孩子自己的草稿和想象里诞生。</figcaption>
+      </figure>
+    </header>
+
+    <section>
+      <h2>我们要回应的教育痛点</h2>
+      <p>AI 会把公共知识和很多经验知识的调用成本降得很低。过去教育把大量精力放在“记住知识、接受讲授、通过考试”上，但未来真正拉开差距的，可能不是谁记得更多，而是谁更会提问、行动、创造、复盘和协作。</p>
+      <div class="statement">教育不该只是把孩子送进一套更高效的筛选机器，而应该帮助孩子形成完整、稳定、有生命力的自我。</div>
+      <div class="grid">
+        <article class="card coral">
+          <span class="tag">旧痛点</span>
+          <h3>分数定义人</h3>
+          <p>孩子很容易被成绩、排名和标签理解，而不是被真实经历和成长轨迹理解。</p>
+        </article>
+        <article class="card yellow">
+          <span class="tag">旧痛点</span>
+          <h3>知识脱离生活</h3>
+          <p>知识常常停在题目里，没有变成观察世界、解决问题和创造作品的能力。</p>
+        </article>
+        <article class="card blue">
+          <span class="tag">旧痛点</span>
+          <h3>成长缺少记忆</h3>
+          <p>孩子做过的尝试、失败、作品和闪光时刻，很少被长期记录和重新看见。</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>未来教育更像什么</h2>
+      <div class="compare">
+        <div class="compare-block old">
+          <h3>不再只是</h3>
+          <ul>
+            <li>老师讲授，孩子接受</li>
+            <li>统一进度，统一答案</li>
+            <li>作业和考试证明价值</li>
+            <li>孩子被分数、排名和标签解释</li>
+            <li>学习结束后没有长期成长记忆</li>
+          </ul>
+        </div>
+        <div class="compare-block new">
+          <h3>而是逐渐变成</h3>
+          <ul>
+            <li>AI 陪伴降低知识门槛</li>
+            <li>孩子从问题和项目出发</li>
+            <li>作品、行动和复盘成为证据</li>
+            <li>伙伴帮助孩子看见自己的变化</li>
+            <li>成长被记录成长期故事和作品集</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>孩子实际看到的不是数值，而是故事变化</h2>
+      <p>开发时可以有内部指标帮助系统判断，但这些指标不能展示给孩子、家长或外部机构。人不能由数值定义，成长也不能被包装成新的优绩主义。</p>
+      <div class="journey">
+        <div class="step">孩子画出伙伴</div>
+        <div class="step">伙伴形成统一风格</div>
+        <div class="step">一起完成知识挑战</div>
+        <div class="step">伙伴获得技能或变化</div>
+        <div class="step">生成一页回忆故事</div>
+      </div>
+      <figure>
+        <img src="assets/02-sketch-to-companion.svg" alt="孩子草稿被整理成统一风格的伙伴">
+        <figcaption>第一层体验是“这是我创造的伙伴”，不是“系统给我的学习工具”。</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>两个核心机制</h2>
+      <p>这个项目真正的核心，不是“学了多少知识”，也不是“在线多久”，而是两个长期机制：孩子是否在变得更完整，以及孩子是否和自己的伙伴形成了健康、可信、能共同成长的关系。</p>
+      <div class="two-grid">
+        <article class="card green">
+          <span class="tag">核心机制一</span>
+          <h3>完整人格成长机制</h3>
+          <p>系统内部会持续观察孩子在好奇心、真实经验、生命力、专注力、想象力和合作能力上的变化。它关心的不是孩子有没有刷更多题，而是有没有提出自己的问题、完成真实行动、创造作品、面对失败并复盘。</p>
+          <p>这个机制只用于生成更合适的挑战、反馈和保护建议，不能变成分数、排名、标签或家长监控工具。</p>
+        </article>
+        <article class="card blue">
+          <span class="tag">核心机制二</span>
+          <h3>伙伴情感交互机制</h3>
+          <p>孩子必须喜欢并信任自己的 AI 伙伴，伙伴才可能长期陪在身边。系统需要让伙伴记住孩子重视的事，尊重孩子的选择，在孩子失败时不羞辱、不审判，并在关键时刻给出合适建议。</p>
+          <p>这个机制不是为了操控孩子，也不是制造依赖，而是让孩子感到“它理解我，但不会替我活”。</p>
+        </article>
+      </div>
+      <div class="statement">这两个机制可以在开发时被讨论，但在产品里不能以具体数值展示。孩子看到的应该是伙伴更懂自己、故事继续生长、挑战更贴近自己，而不是一个人格分或羁绊分。</div>
+    </section>
+
+    <section>
+      <h2>最终系统的核心形态</h2>
+      <div class="grid">
+        <article class="card blue">
+          <span class="tag">AI 伙伴</span>
+          <h3>长期陪伴</h3>
+          <p>伙伴记住孩子重视的事，尊重孩子的选择，在合适的时候给建议，而不是替孩子做决定。</p>
+        </article>
+        <article class="card green">
+          <span class="tag">真实行动</span>
+          <h3>现实世界是主场</h3>
+          <p>挑战不只发生在屏幕里，也鼓励观察、制作、采访、运动、合作和复盘。</p>
+        </article>
+        <article class="card yellow">
+          <span class="tag">知识技能</span>
+          <h3>知识变成能力</h3>
+          <p>孩子学到的知识会变成伙伴技能、策略选择、故事变化和下一次探索入口。</p>
+        </article>
+        <article class="card coral">
+          <span class="tag">记忆系统</span>
+          <h3>成长有回声</h3>
+          <p>系统把孩子的尝试、作品、失败和发现沉淀成回忆，而不是只留下完成记录。</p>
+        </article>
+        <article class="card">
+          <span class="tag">同伴协作</span>
+          <h3>不是孤独学习</h3>
+          <p>未来可以支持孩子和同伴一起完成项目，但权力关系必须清晰，不能变成排名竞赛。</p>
+        </article>
+        <article class="card green">
+          <span class="tag">数字资产</span>
+          <h3>属于孩子的成长材料</h3>
+          <p>长期看，角色、作品、回忆和项目经历应成为孩子自己的数字资产，而不是平台的数据商品。</p>
+        </article>
+      </div>
+      <div class="two-grid">
+        <figure>
+          <img src="assets/03-knowledge-challenge.svg" alt="伙伴发起知识小挑战">
+          <figcaption>知识不是题库，而是打开现实挑战和伙伴技能的钥匙。</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/05-memory-storybook.svg" alt="回忆故事本记录成长经历">
+          <figcaption>长期陪伴必须有记忆，否则伙伴只是一轮轮普通聊天。</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="guardrails">
+      <h2>这件事不能变成什么</h2>
+      <p>愿景越大，边界越重要。这个项目必须从一开始就抵抗“用 AI 包装旧教育”的冲动。</p>
+      <div class="grid">
+        <article class="card">
+          <span class="tag">不能</span>
+          <h3>新的刷题系统</h3>
+          <p>知识挑战不能退化成机械答题和活跃度奖励。</p>
+        </article>
+        <article class="card">
+          <span class="tag">不能</span>
+          <h3>新的孩子排名</h3>
+          <p>人格、羁绊、风险等内部判断不能被展示、比较、交易或标签化。</p>
+        </article>
+        <article class="card">
+          <span class="tag">不能</span>
+          <h3>新的家长监控后台</h3>
+          <p>产品不能把孩子的内心和成长关系变成家长随时查看的控制面板。</p>
+        </article>
+        <article class="card">
+          <span class="tag">不能</span>
+          <h3>新的成瘾循环</h3>
+          <p>伙伴可以有吸引力，但不能让孩子停留在无意义的信息流和奖励循环里。</p>
+        </article>
+        <article class="card">
+          <span class="tag">不能</span>
+          <h3>替孩子做决定</h3>
+          <p>AI 可以建议、提醒、陪伴和保护，但不能剥夺孩子的主观能动性。</p>
+        </article>
+        <article class="card">
+          <span class="tag">不能</span>
+          <h3>儿童数据商品化</h3>
+          <p>孩子的成长材料必须被保护，不能成为平台变现和外部筛选的原料。</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>为什么现在先做一个很小的 Demo</h2>
+      <p>最终愿景很大，但现在的现实条件很小：个人开发者、没有资金、没有项目履历。第一阶段不能承诺完整教育系统，也不能承诺替代学校。我们只验证一个最小问题：</p>
+      <div class="statement">孩子亲手画出的伙伴，能不能通过统一风格生成、知识挑战、游戏反馈和回忆故事，形成一个有吸引力的最小成长体验。</div>
+      <figure>
+        <img src="assets/04-companion-evolves.svg" alt="伙伴因为孩子的行动发生变化">
+        <figcaption>第一版只证明“伙伴会因为孩子做过的事而变化”，这已经足够启动协作。</figcaption>
+      </figure>
+      <div class="nav-actions">
+        <a class="nav-link" href="tasks.html">去看当前需要协作的任务</a>
+        <a class="nav-link secondary" href="index.html">返回项目介绍</a>
+      </div>
+    </section>
+
+    <footer>
+      小小冒险伙伴：当前是早期 Web Demo 与协作招募阶段，长期愿景只作为方向，不作为当前能力承诺。
+    </footer>
+  </main>
+</body>
+</html>
