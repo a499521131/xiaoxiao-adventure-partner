@@ -79,6 +79,31 @@
       flex-wrap: wrap;
     }
 
+    .top-links {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+    }
+
+    .top-link {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 8px;
+      border: 1px solid var(--ink);
+      background: var(--ink);
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .top-link.secondary {
+      background: #fff;
+      color: var(--ink);
+      border-color: var(--line);
+    }
+
     .tab {
       appearance: none;
       border: 1px solid var(--line);
@@ -433,6 +458,10 @@
       <div>
         <h1>任务协作窗口</h1>
         <p class="lead">给“小小冒险伙伴”用的轻量协作页。它把任务说成人话，方便发给独立开发者、设计师、内容协作者；也能接收完成结果，按清晰标准打分，算出每个人在项目里的贡献权重。</p>
+        <div class="top-links">
+          <a class="top-link" href="index.html">查看项目介绍</a>
+          <a class="top-link secondary" href="https://github.com/a499521131/xiaoxiao-adventure-partner">查看 GitHub 仓库</a>
+        </div>
       </div>
       <div class="status">
         当前版本：本地静态页<br>
